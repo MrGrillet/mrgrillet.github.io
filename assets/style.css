@@ -46,7 +46,7 @@ body {
 
 .container {
   background-color: #fff;
-  margin: 20px;
+  margin: 10px;
   border-radius: 6px;
 }
 
@@ -154,16 +154,16 @@ nav ul a:hover {
   margin-bottom               : 0;
 }
 
-a .project-card-link {
+.previous-projects a {
   border                      : 0;
 }
-a:hover .project-card-link {
+.previous-projects a:hover {
   top                         : 0;
   padding-bottom              : 0;
 }
 
 a:hover small {
-  color                       : #2b2b2b;
+  color                       : #fff;
 }
 
 /*  200. Content  */
@@ -185,26 +185,19 @@ main {
 
 .history {
   text-align: center;
-}
-
-.tool-kit {
-
-}
-
-.experiments {
-
-}
-
-.future {
-
-}
-
-.current-projects {
-
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
 }
 
 .previous-projects {
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
+}
 
+.full-width-box {
+  width: 100%;
 }
 
 .articles {
@@ -215,9 +208,8 @@ footer {
 
 }
 
-.container {
-	width 							        : (100% - 40px);
-	padding 						        : 20px;
+.clear {
+  clear: both;
 }
 
 
@@ -228,10 +220,10 @@ nav {
   position                    : fixed;
   bottom                      : -500px;
   width                       : 100%;
-  height                      : 500px;
+  height                      : 400px;
   color                       : #fff;
-  background-color            : #000;
-  z-index: 30;
+  background-color            : rgba(0, 0, 0, 0.95);
+  z-index                     : 30;
   transition                  : all ease-in-out 400ms;
 }
 
@@ -240,24 +232,22 @@ nav {
   bottom                      : 30px;
   right                       : 30px;
   padding                     : 20px;
-  background-color            : rgba(0, 0, 0, 0.8);
+  background-color            : rgba(0, 0, 0, 0.95);
   z-index                     : 130;
-  border-radius: 4px;
+  border-radius               : 4px;
 }
 
 nav ul {
   margin                      : 40px;
   list-style                  : none;
-  display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
 
 }
 
 nav li {
-
   display: inline-block;
-  
   padding: 10px;
 }
 
@@ -287,15 +277,16 @@ section {
 }
 
 .hero-copy {
-  margin-top: 360px;
+  margin-top: 300px;
 }
 
 .my-name,
 .hero p,
-.hero .lead {
+.hero .lead,
+.attention .lead,
+.attention p {
   margin                      : 12px 10px 0 0;
   max-width                   : 100%;
-  padding                     : 0px 20% 0px 20%;
 }
 
 .history p,
@@ -321,14 +312,15 @@ section h2 {
   background-repeat           : no-repeat;
   background-size             : cover;
   background-position         : center center;
-  border-radius               : 4px;
 }
+
+
 
 .left-screen {
  float: left;
- width                        : 100%;
+ width                        : 50%;
  height                       : 100%;
- background-color             : rgba(0, 0, 0, 0.8);
+
  border-top-left-radius       : 4px;
  border-bottom-left-radius    : 4px;
 
@@ -343,12 +335,19 @@ section h2 {
   background-position         : center center;
   border-top-right-radius     : 4px;
   border-bottom-right-radius  : 4px;
+}
 
+.attention .right-screen {
+  width                       : 50%;
+  height                      : 100%;
+  background-repeat           : no-repeat;
+  background-size             : 600px 700px;
+  background-position         : center center;
 }
 
 .dark-section-white-text {
 	color 							        : #fff;
-	background-color 				    : #2b2b2b;
+	background-color 				    : rgba(0, 0, 0, 0.95);
 }
 
 .dark-section-white-text p,
@@ -365,14 +364,14 @@ section h2 {
 }
 
 .section-container{
-  text-align: center;
   display: inline-block;
   width: 100%;
   padding: 20px 0 20px 0;
 }
 
-.languages-frameworks ul {
+.languages-frameworks {
   width: 100%;
+  margin: 10px 0 0 -10px;
 }
 .languages-frameworks li {
   display: inline-block;
@@ -400,14 +399,14 @@ section h2 {
 	width 							        : 100%;
 }
 
-.code-languages-list ul {
-margin-left: 0px;
+.previous-projects ul {
+margin-left: 0;
 background-color: #2b2b2b;
 }
 
 .code-languages-list li  {
   display: inline-block;
-  margin-left: 0px;
+  margin-left: -10px;
 }
 
 .categories li,
@@ -444,7 +443,7 @@ footer ul li a {
   padding                     : 10px;
   margin                      : 10px;
   float                       : left;
-  border                      : 2px solid #2b2b2b;
+background-color: rgba(0, 0, 0, 0.95);
 }
 
 .previous-projects-card {
@@ -453,7 +452,7 @@ footer ul li a {
 	float                       : left;
   border-radius               : 4px;
   padding                     : 0px;
-  background-color            : #fafafa;
+  background-color: rgba(0, 0, 0, 0.95);
 
 }
 
@@ -470,6 +469,7 @@ footer ul li a {
 .previous-projects-card small,
 .previous-projects-card li {
   margin: 8px 16px 16px 16px;
+  color: #fff;
 }
 
 
@@ -502,8 +502,8 @@ img {
 .slides {
   width                       : 100%;
   transition                  : all 2.75s ease;
-  display:none
-  padding: 10px;
+  display                     :none
+  padding                     : 10px;
 }
 
 .slide-image {
@@ -517,8 +517,8 @@ img {
 }
 
 .slide-caption {
-padding: 16px;
-height: 240px;
+padding                       : 16px;
+height                        : 240px;
 }
 
 .slide-caption h3,
@@ -679,12 +679,12 @@ figcaption {
 /* 230. Layout - Tablet */
 @media screen and (min-width: 731px) {
 	.container {
-		margin-bottom 					     : 20px;
+		margin-bottom 					     : 60px;
 	}
-  .hero .left-screen {
+  .left-screen {
     float: left;
     width: 50%;
-    background-color             : rgba(0, 0, 0, 0);
+
   }
   .hero .right-screen {
     float: right;
@@ -696,8 +696,22 @@ figcaption {
     border-bottom-right-radius  : 4px;
   }
 
+  .attention .right-screen {
+    float: right;
+    width                       : 50%;
+    background-repeat           : no-repeat;
+    background-size             : 1200px 660px;
+    background-position         : left center;
+  }
+
+  .attention {
+    height 						          : 660px;
+    margin-top 						      : 0px;
+    width                       : 100%;
+  }
+
   .hero-copy {
-    margin-top: 200px;
+    margin: 100px 20% 100px 20%;
   }
 }
 
@@ -707,9 +721,8 @@ figcaption {
 
 @media screen and (min-width  : 1200px) {
 	.container {
-		margin-bottom 					  : 20px;
+		margin-bottom 					  : 120px;
 	}
-
 
   .img-right {
   	max-width                 : 600px;
@@ -721,7 +734,7 @@ figcaption {
   }
 
 	.previous-projects-card {
-		max-width                 : 386px;
+		max-width                 : 500px;
 	}
 
   .pull-quote {
