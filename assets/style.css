@@ -40,15 +40,14 @@ input, select {
   vertical-align              : middle;
 }
 
-body {
-  background-color: #111;
+.container {
+  padding: 0;
 }
 
-.container {
-  background-color: #fff;
-  margin: 10px;
-  border-radius: 6px;
+main {
+  margin: 20px;
 }
+
 
 /* Typeogrpahy */
 
@@ -721,8 +720,16 @@ figcaption {
 
 @media screen and (min-width  : 1200px) {
 	.container {
-		margin-bottom 					  : 120px;
+		margin-bottom 					  : 20px;
 	}
+
+  main {
+    margin: 20px 20px 20px 200px;
+  }
+
+  footer {
+    margin: 20px 20px 20px 40px;
+  }
 
   .img-right {
   	max-width                 : 600px;
@@ -736,6 +743,12 @@ figcaption {
 	.previous-projects-card {
 		max-width                 : 500px;
 	}
+
+  .previous-projects-card img {
+    max-width: 520px;
+    max-height: 280px;
+    border-radius: 4px 4px 0 0;
+  }
 
   .pull-quote {
   	width                     : 320px;
@@ -757,5 +770,6 @@ figcaption {
   section {
     margin: 0 0 200px 0;
   }
+
 
 }
