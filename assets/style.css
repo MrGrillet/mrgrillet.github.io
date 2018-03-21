@@ -40,6 +40,15 @@ input, select {
   vertical-align              : middle;
 }
 
+body {
+  background-color: #111;
+}
+
+.container {
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 6px;
+}
 
 /* Typeogrpahy */
 
@@ -163,71 +172,50 @@ a:hover small {
 /* Grid Areas */
 
 header {
-	grid-area 					        : header;
-	padding 						        : 0px;
+
 }
 
 main {
-  grid-area                   : main;
   width                       : (100% - 40px);
 }
 
-project-card {
-  grid-area                   : project-card;
+.project-card {
+
 }
 
 .history {
-	grid-area 						      : history;
   text-align: center;
 }
 
 .tool-kit {
-	grid-area 						      : tool-kit;
+
 }
 
 .experiments {
-	grid-area 						      : experiments;
+
 }
 
 .future {
-  grid-area 						      : future;
+
 }
 
 .current-projects {
-	grid-area 						      : current-projects;
+
 }
 
 .previous-projects {
-	grid-area 					        : previous-projects;
+
 }
 
 .articles {
-	grid-area 						      : articles;
+
 }
 
 footer {
-	grid-area 						      : footer;
+
 }
 
 .container {
-	display 			 			        : grid;
-	grid-gap 						        : 20px;
-	grid-template-areas 		    :
-		"hero"
-		"history"
-		"future"
-		"current-projects"
-
-
-
-		"articles"
-		"article"
-    "main"
-		"experiments"
-		"tool-kit"
-		"previous-projects"
-		"footer" ;
-	grid-template-columns 	    : 1fr;
 	width 							        : (100% - 40px);
 	padding 						        : 20px;
 }
@@ -238,19 +226,18 @@ footer {
 
 nav {
   position                    : fixed;
-  top                         : 0;
-  right                       : -300px;
-  bottom                      : 0;
-  width                       : 300px;
+  bottom                      : -100%;
+  width                       : 100%;
+  height: 900px;
   color                       : #fff;
   background-color            : #111;
   z-index: 30;
-  transition                  : all ease-in-out 200ms;
+  transition                  : all ease-in-out 400ms;
 }
 
 .menu-toggle-button {
   position                    : fixed;
-  top                         : 30px;
+  bottom                      : 30px;
   right                       : 30px;
   padding                     : 20px;
   background-color            : #2b2b2b;
@@ -261,6 +248,17 @@ nav {
 nav ul {
   margin                      : 40px;
   list-style                  : none;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+nav li {
+
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
 }
 
 .center {
@@ -317,7 +315,6 @@ section h2 {
 
 
 .hero {
-	grid-area 						      : hero;
 	height 						          : 700px;
 	margin-top 						      : 0px;
   width                       : 100%;
@@ -371,7 +368,7 @@ section h2 {
   text-align: center;
   display: inline-block;
   width: 100%;
-  padding: 20px 0 20px 0; 
+  padding: 20px 0 20px 0;
 }
 
 .languages-frameworks ul {
@@ -648,8 +645,8 @@ figcaption {
 	width                       : (100% - 40px);
   max-width                   : 630px;
   margin-bottom               : 16px;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-bottom-left-radius   : 4px;
+  border-bottom-right-radius  : 4px;
 }
 
 .pull-quote {
@@ -682,23 +679,7 @@ figcaption {
 /* 230. Layout - Tablet */
 @media screen and (min-width: 731px) {
 	.container {
-		display 			 			      : grid;
-		grid-gap 						      : 20px;
-		grid-template-areas 	    :
-			" hero hero hero hero "
-			". history history ."
-      ". future future ."
-      ". experiments experiments ."
-			". current-projects current-projects ."
-      ". main main ."
-      ". project-card project-card."
-			". tool-kit tool-kit ."
-			". previous-projects previous-projects ."
-			". articles articles ."
-			". article article ."
-			". footer footer .";
-		grid-template-columns     : 1fr 300px 300px 1fr;
-		margin-bottom 					  : 20px;
+		margin-bottom 					     : 20px;
 	}
   .hero .left-screen {
     float: left;
@@ -726,22 +707,6 @@ figcaption {
 
 @media screen and (min-width  : 1200px) {
 	.container {
-		display 			 			      : grid;
-		grid-gap 						      : 20px;
-		grid-template-areas 		  :
-			" hero hero hero hero "
-      ". history history ."
-      ". future future ."
-      ". experiments experiments ."
-      ". main main ."
-      ". project-card project-card ."
-			". current-projects current-projects ."
-			". tool-kit tool-kit ."
-			". previous-projects previous-projects ."
-			". articles articles ."
-			". article article ."
-			". footer footer .";
-		grid-template-columns 	  : 1fr 600px 600px 1fr;
 		margin-bottom 					  : 20px;
 	}
 

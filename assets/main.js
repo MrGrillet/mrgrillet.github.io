@@ -4,10 +4,10 @@ var navStatus = true;
 function toggleNav() {
 
   if (navStatus === true) {
-    document.getElementById('navigation-bar').style.right = "0px";
+    document.getElementById('navigation-bar').style.bottom = "0px";
     navStatus = false;
   } else {
-    document.getElementById('navigation-bar').style.right = "-300px";
+    document.getElementById('navigation-bar').style.bottom = "-100%";
     navStatus = true;
   };
 };
