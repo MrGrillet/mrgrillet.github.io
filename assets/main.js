@@ -7,7 +7,7 @@ function toggleNav() {
     document.getElementById('navigation-bar').style.bottom = "0px";
     navStatus = false;
   } else {
-    document.getElementById('navigation-bar').style.bottom = "-600px";
+    document.getElementById('navigation-bar').style.bottom = "-500px";
     navStatus = true;
   };
 };
