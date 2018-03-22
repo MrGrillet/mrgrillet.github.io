@@ -1,247 +1,154 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <title>MrGrillet v4</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-      <link rel="stylesheet" type="text/css" href="assets/style.css">
-      <meta charset="UTF-8">
-  </head>
-  <body>
-    <div class="menu-toggle-button" onclick="toggleNav()" ><p>Toggle Menu</p></div>
-    <nav id="navigation-bar">
-      <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="projects.html" >Projects*</a></li>
-        <li><a href="posts.html" >Notes</a></li>
-        <li><a href="https://github.com/MrGrillet" target="_blank" >Github</a></li>
-        <li><a href="https://twitter.com/MrGrillet" target="_blank" >Twitter</a></li>
-        <li><a href="mailto:mrgrillet@gmail.com" target="_blank" >Contact</a></li>
-      </ul>
-    </nav>
-    <div class="container">
-      <section class="hero dark-section-white-text">
-        <div class="left-screen">
-          <div class="hero-copy">
-            <p class="my-name">Peter Grillet</p>
-            <p class="lead">Startup geek with experience across Marketing, Operations and Web Deveopment</p>
-            <p>I'm currenlty mastering Rails and JavaScript. looking to work with poeple who want to ship worldclass software projects.</p>
-          </div>
-        </div>
-        <div class="right-screen"  style="background-image: url('img/me.jpg');">
-        </div>
-      </section>
 
-
-
-
-  <section class="history">
-    <div class="full-width-box">
-      <p class="lead">I have owned my own Startups and helped several people build their theirs various capacities...</p>
-    </div>
-
-    <div class="background-card">
-      <h4>Web Developer</h4>
-      <p>I’ve helped build money transfer platforms, Location Based Services, Learning Management Systems and, blogs</p>
-    </div>
-    <div class="background-card">
-      <h4>Operations</h4>
-      <p>I was the head of Operations and Marketing at London’s leading accounting firm for tech startups as it grew rapidly.</p>
-      <p>Firefighting on a daily basis while ensuring our team were safe, happy and productive at all times was an amazingly rewarding challenge.</p>
-    </div>
-    <div class="background-card">
-      <h4>Marketing</h4>
-      <p>I’ve sold and helped clients sell all types of things through digital marketing from Accounting to eBooks</p>
-    </div>
-    <div class="section-container">
-      <a href="about.html">Learn more</a>
-    </div>
-  </section>
-
-  <section class="attention">
-    <div class="left-screen">
-
-        <div class="section-container">
-        <p class="">Currently</p>
-        <p class="lead">Staying up all night, looking for a missing semicolon</p>
-        <p>I have always been passionate about creating things and putting them online so, I’ve decided to step back from marketing and explore becomming full stack developer who can rapidly produce prototypes.</p>
-        <ul class="languages-frameworks">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Bootstrap</li>
-          <li>Rails</li>
-          <li>Ruby</li>
-          <li>Postgres</li>
-          <li>Wordpress</li>
-          <li>JavaScript</li>
-          <li>React.js</li>
-          <li>Heroku</li>
-          <li>GitHub</li>
-          <li>AWS</li>
-          <li>Git</li>
-          <li>Stripe</li>
-        </ul>
-        <p>My first project since learning Ruby on Rails is sourceCoder. It's an app for matching Jr Devs with awesome jobs.</p>
-        <p><a href="sourcecoder.html">learn more</a> <a href="https://github.com/MrGrillet/sourcecoder" target="_blank">view code</a></p>
-
-
-
-        </div>
-
-    </div>
-    <div class="right-screen"  style="background-image: url('img/sc-mac.png');">
-    </div>
-    <div class="clear">
+<head>
+  <title>Peter Grillet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div class="menu-toggle-button" onclick="toggleNav()">
+    <p>Toggle Menu</p>
   </div>
-</section>
-<!--
-  <section class="experiments">
-    <h3 class="center">Experiments</h3>
-    <p class="lead center">I find the best way to learn anyting is to build things...</p>
-    <p class="center">To learn more about any of the projects, click on slide. To see what I have been working on most recently, checkout my twitter feed... <a href="#">bang!</a></p>
-    <div class="carousel">
-      <div class="slider-buttons">
-        <div class="arrow-buttons" onclick="plusDivs(1)" >></div>
+  <nav id="navigation-bar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects*</a></li>
+      <li><a href="posts.html">Notes</a></li>
+      <li><a href="https://github.com/MrGrillet" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/MrGrillet" target="_blank">Twitter</a></li>
+      <li><a href="mailto:mrgrillet@gmail.com" target="_blank">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <section class="hero dark-section-white-text">
+      <div class="left-screen">
+        <div class="hero-copy">
+          <p class="my-name">Peter Grillet</p>
+          <p class="lead">Startup geek with experience across Marketing, Operations and Web Deveopment</p>
+          <p>I'm looking to work with poeple who want to ship worldclass software projects.</p>
+        </div>
       </div>
-      <div class="slides">
-        <a href="courcecoder.html" class="slide-link">
-          <div class="slide-image" style="background-image: url('img/sc.jpg');"></div>
-          <div class="slide-caption">
-            <h3>sourceCoder</h3>
-            <p>This is my frist attempt at building an application on my own with Rails. It's a Jobs Board aimed at connecting Junior Developers and interesting companies.</p>
-            <p>It was built using Bootstrap 4, Rails, HTML5, CSS3 and some Javascript. Click on the image to learn more and see behind the scenes...</p>
-            <ul class="code-languages-list">
-              <li>PHP</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+      <div class="right-screen" style="background-image: url('img/me.jpg');">
+      </div>
+    </section>
+    <section class="history">
+      <div class="full-width-box">
+        <p class="lead">I have owned my own Startups and helped several people build their theirs various capacities...</p>
+      </div>
+      <div class="background-card">
+        <h4>Web Developer</h4>
+        <p>I’ve helped build money transfer platforms, Location Based Services, Learning Management Systems and, blogs</p>
+      </div>
+      <div class="background-card">
+        <h4>Operations</h4>
+        <p>I was the head of Operations and Marketing at London’s leading accounting firm for tech startups as it grew rapidly.</p>
+        <p>Firefighting on a daily basis while ensuring our team were safe, happy and productive at all times was an amazingly rewarding challenge.</p>
+      </div>
+      <div class="background-card">
+        <h4>Marketing</h4>
+        <p>I’ve sold and helped clients sell all types of things through digital marketing from Accounting to eBooks</p>
+      </div>
+      <div class="section-container">
+        <a href="about.html">Learn more</a>
+      </div>
+    </section>
+    <section class="attention">
+      <div class="left-screen">
+        <div class="section-container">
+          <p class="">Currently</p>
+          <p class="lead">Staying up all night, looking for a missing semicolon</p>
+          <p>I have always been passionate about creating things and putting them online so, I’ve decided to step back from marketing and explore becomming full stack developer who can rapidly produce prototypes.</p>
+          <ul class="languages-frameworks">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Rails</li>
+            <li>Ruby</li>
+            <li>Postgres</li>
+            <li>Wordpress</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Heroku</li>
+            <li>GitHub</li>
+            <li>AWS</li>
+            <li>Git</li>
+            <li>Stripe</li>
+          </ul>
+          <p>My first project since learning Ruby on Rails is sourceCoder. It's an app for matching Jr Devs with awesome jobs.</p>
+          <p><a href="sourcecoder.html" class="btn">learn more</a> <a href="https://github.com/MrGrillet/sourcecoder" target="_blank">view code</a></p>
+        </div>
+      </div>
+      <div class="right-screen" style="background-image: url('img/sc-mac.png');">
+      </div>
+      <div class="clear">
+      </div>
+    </section>
+
+
+    <section class="previous-projects">
+      <div class="full-width-box">
+        <h2>Previous Projects</h2>
+        <p>What I did in the past. We don’t see them, we will never see them. Eliptical talk. Every chance I get, I water the plants, Lion! Another one. To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. The key to
+          more success is to have a lot of pillows. Every chance I get, I water the plants, Lion! Another one.</p>
+        <p><a href="projects.html" class="">View all projects</a></p>
+      </div>
+      <a href="http://www.armoury.digital" class="project-card-link" target="_blank" >
+        <div class="previous-projects-card">
+          <img src="img/ad.jpg" style="">
+          <h6>Armoury Digital</h6>
+          <p>This was a thing that had these standout features</p>
+          <ul>
+            <li>Founder & Digital Marketing Consultant</li>
+          </ul>
         </div>
       </a>
-      </div>
-      <div class="slides">
-        <div class="slide-image" style="background-image: url('img/code.jpg');"></div>
-        <div class="slide-caption">
-          <h3>Project Management App</h3>
-          <p>What I did in the past. We don’t see them, we will never see them. Eliptical talk. Every chance I get, I water the plants, Lion! Another one. </p>
-          <ul class="code-languages-list">
+      <a href="http://fashionbloggingguide.com" class="project-card-link" target="_blank" >
+        <div class="previous-projects-card">
+          <img src="img/fbg.jpg" style="">
+          <h6>Fashion Blogging Guide</h6>
+          <p>This was a thing that had these standout features</p>
+          <ul>
+            <li>Wordpress</li>
+            <li>WooCommerce</li>
+            <li>LearnDash LMS</li>
+          </ul>
+        </div>
+      </a>
+      <a href="#" class="project-card-link">
+        <div class="previous-projects-card">
+          <img src="img/a.jpg" style="">
+          <h6>Redhill Card Services</h6>
+          <p>This was a thing that had these standout features</p>
+          <ul>
             <li>PHP</li>
             <li>HTML</li>
             <li>CSS</li>
           </ul>
         </div>
-      </div>
-      <div class="slides">
-        <div class="slide-image" style="background-image: url('img/np.png');"></div>
-        <div class="slide-caption">
-          <h3>Alpha Blog</h3>
-          <p>What I did in the past. We don’t see them, we will never see them. Eliptical talk. Every chance I get, I water the plants, Lion! Another one. </p>
-          <ul class="code-languages-list">
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
+      </a>
+      <a href="http://www.ihorizon.co.uk" class="project-card-link">
+        <div class="previous-projects-card">
+          <img src="http://ihorizon.co.uk/wp-content/uploads/2018/02/ihorizon-25web-1.jpg" style="" target="_blank" >
+          <h6>ihorizon</h6>
+          <p>This was a thing that had these standout features</p>
+          <ul>
+            <li>Head of Operations & Marketing</li>
           </ul>
         </div>
-      </div>
-      <div class="slides">
-        <div class="slide-image" style="background-image: url('img/2.jpg');"></div>
-        <div class="slide-caption">
-          <h3>Social Stock Tracker</h3>
-          <p>What I did in the past. We don’t see them, we will never see them. Eliptical talk. Every chance I get, I water the plants, Lion! Another one. To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. The key to more success is to have a lot of pillows. Every chance I get, I water the plants, Lion! Another one.</p>
-          <ul class="code-languages-list">
-            <li>PHP</li>
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+      </a>
 
--->
 
-  <section class="previous-projects">
-    <div class="full-width-box">
-      <h2>Previous Projects</h2>
-      <p >What I did in the past. We don’t see them, we will never see them. Eliptical talk. Every chance I get, I water the plants, Lion! Another one. To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. The key to more success is to have a lot of pillows. Every chance I get, I water the plants, Lion! Another one.</p>
-      <p><a href="projects.html" class="" >View all projects</a></p>
-    </div>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/ad.jpg" style="">
-        <h4>Armoury Digital</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>Founder & Digital Marketing Consultant</li>
-        </ul>
+    </section>
+    <footer class="footer">
+      <div class="left">
+        <p>&copy; Peter Grillet - 2018</p>
       </div>
-    </a>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/fbg.jpg" style="">
-        <h4>Fashion Blogging Guide</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>Wordpress</li>
-          <li>WooCommerce</li>
-          <li>LearnDash LMS</li>
-        </ul>
-      </div>
-    </a>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/welcome.jpg" style="">
-        <h4>Redhill Card Services</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </a>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/nav.jpg" style="">
-        <h4>nav-poi.com</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </a>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/family.png" style="">
-        <h4>FamilyMosaic</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>PHP</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
-      </div>
-    </a>
-    <a href="single_post.html" class="project-card-link">
-      <div class="previous-projects-card">
-        <img src="img/code.jpg" style="">
-        <h4>ihorizon</h4>
-        <p>This was a thing that had these standout features</p>
-        <ul>
-          <li>Job: Head of Mareting & Operations</li>
-        </ul>
-      </div>
-    </a>
-
-  </section>
-  <footer class="footer">
-    <div class="left"><p>&copy; Peter Grillet - 2018</p></div>
-    <div class="right"></div>
-
-  </footer>
-  <div class="clear">
-</div>
-    <script src="assets/main.js"></script>
-  </body>
+      <div class="right"></div>
+    </footer>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
 </html>
