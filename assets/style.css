@@ -129,11 +129,19 @@ a:hover {
   padding-bottom              : 2px;
 }
 
-.btn {
-  border                      : 2px solid #2b2b2b;
-  padding                     : 10px;
-  margin                      : 10px;
+ .full-width-box .btn {
+  border                      : 2px solid #000;
+  padding                     : 20px;
+  margin                      : 30px;
   display                     : inline-block;
+  border-radius: 4px;
+}
+
+.full-width-box .btn:hover {
+ border                      : 2px solid #000;
+ padding                     : 20px;
+ display                     : inline-block;
+ border-radius: 4px;
 }
 
 nav ul a {
@@ -197,6 +205,7 @@ main {
 
 .full-width-box {
   width: 100%;
+  text-align: center;
 }
 
 .articles {
@@ -303,7 +312,6 @@ section h2 {
   max-width                   : 100%;
 }
 
-
 .hero {
 	height 						          : 700px;
 	margin-top 						      : 0px;
@@ -313,17 +321,9 @@ section h2 {
   background-position         : center center;
 }
 
-
-
-.left-screen {
+.hero .left-screen {
  float: left;
- width                        : 50%;
- height                       : 100%;
-
- border-top-left-radius       : 4px;
- border-bottom-left-radius    : 4px;
-
-
+ width                        : 100%;
 }
 
 .hero .right-screen {
@@ -336,19 +336,33 @@ section h2 {
   border-bottom-right-radius  : 4px;
 }
 
+.attention {
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
+  width                       : 100%;
+}
+
+.attention  .left-screen {
+  width                       : 100%;
+  padding                     : 10% 10%;
+}
+
 .attention .right-screen {
-  width                       : 50%;
-  height                      : 100%;
+  width                       : 500px;
+  height                      : 500px;
   background-repeat           : no-repeat;
-  background-size             : 600px 700px;
+  background-size             : 500px 300px;
   background-position         : center center;
 }
+
 
 .dark-section-white-text {
 	color 							        : #fff;
 	background-color 				    : rgba(0, 0, 0, 0.95);
 }
 
+.dark-section-white-text small,
 .dark-section-white-text p,
 .dark-section-white-text h2,
 .dark-section-white-text h3,
@@ -439,10 +453,11 @@ footer ul li a {
 
 .project-card {
   max-width                   : 550px;
-  padding                     : 10px;
+  padding                     : 0;
   margin                      : 10px;
   float                       : left;
-background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius               : 4px;
 }
 
 .previous-projects-card {
@@ -680,11 +695,11 @@ figcaption {
 	.container {
 		margin-bottom 					     : 60px;
 	}
-  .left-screen {
+  .hero .left-screen {
     float: left;
     width: 50%;
-
   }
+
   .hero .right-screen {
     float: right;
     width                       : 50%;
@@ -695,22 +710,24 @@ figcaption {
     border-bottom-right-radius  : 4px;
   }
 
-  .attention .right-screen {
-    float: right;
-    width                       : 50%;
-    background-repeat           : no-repeat;
-    background-size             : 1200px 660px;
-    background-position         : left center;
+  .attention  .left-screen {
+    width                       : 100%;
   }
 
-  .attention {
-    height 						          : 660px;
-    margin-top 						      : 0px;
-    width                       : 100%;
+  .attention .right-screen {
+    width: 100%;
+    min-height: 500px;
+    background-repeat           : no-repeat;
+    background-size             : 800px 500px;
+    background-position         : center bottom;
   }
 
   .hero-copy {
     margin: 100px 20% 100px 20%;
+  }
+
+  .previous-projects {
+    width: 100%;
   }
 }
 
@@ -726,6 +743,45 @@ figcaption {
   main {
     margin: 20px 20px 20px 200px;
   }
+
+
+
+  .hero .left-screen {
+   float: left;
+   width                        : 50%;
+   height                       : 100%;
+  }
+
+
+  .hero .right-screen {
+    float: right;
+    width                       : 50%;
+    background-repeat           : no-repeat;
+    background-size             : cover;
+    background-position         : center center;
+    border-top-right-radius     : 4px;
+    border-bottom-right-radius  : 4px;
+  }
+
+.attention {
+  flex-wrap                   : nowrap;
+
+}
+
+  .attention  .left-screen {
+    padding: 10% 5%;
+    width: 50%;
+  }
+
+  .attention .right-screen {
+    height: 760px;
+    float: right;
+    width                       : 50%;
+    background-repeat           : no-repeat;
+    background-size             : 1200px 660px;
+    background-position         : left bottom;
+  }
+
 
   footer {
     margin: 20px 20px 20px 40px;
