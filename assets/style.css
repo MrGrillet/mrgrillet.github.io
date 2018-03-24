@@ -273,8 +273,7 @@ section {
 }
 
 .hero-copy {
-  margin-top                  : 200px;
-  padding                     : 18px;
+  margin                    : 100px 20px 100px 20px;
 }
 
 .my-name,
@@ -694,6 +693,7 @@ figcaption {
 
 /* 230. Layout - Tablet */
 @media screen and (min-width: 731px) {
+
 	.container {
 		margin-bottom 					  : 60px;
 	}
@@ -704,7 +704,7 @@ figcaption {
   }
 
   .hero .right-screen {
-    float: right;
+    float                      : right;
     width                      : 50%;
     background-repeat          : no-repeat;
     background-size            : cover;
@@ -725,9 +725,7 @@ figcaption {
     background-position       : center bottom;
   }
 
-  .hero-copy {
-    margin                    : 100px 20% 100px 20%;
-  }
+
 
   main .previous-projects {
     width                     : 100%;
@@ -757,6 +755,10 @@ figcaption {
    float: left;
    width                      : 50%;
    height                     : 100%;
+  }
+
+  .hero-copy {
+    margin                    : 200px 60px 100px 60px;
   }
 
   .hero .right-screen {
