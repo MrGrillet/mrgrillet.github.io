@@ -113,7 +113,7 @@ a {
 a:hover {
   color                       : #2b2b2b;
   border-bottom               : 2px #3FFECA solid;
- position                    : relative;
+  position                    : relative;
   top                         : -2px;
   padding-bottom              : 2px;
 }
@@ -123,14 +123,23 @@ a:hover {
   padding                     : 10px;
   margin                      : 0 20px 0 0;
   display                     : inline-block;
-  border-radius: 4px;
+  border-radius               : 4px;
 }
 
 .btn:hover {
- border                      : 2px solid #000;
- padding                     : 10px;
- display                     : inline-block;
- border-radius: 4px;
+ border                       : 2px solid #000;
+ padding                      : 10px;
+ display                      : inline-block;
+ border-radius                : 4px;
+}
+
+.btn-filled-dark {
+  background-color            : #000;
+  color                       : #fff;
+}
+
+.btn-filled-dark:hover {
+  color                       : #3FFECA;
 }
 
 nav ul a {
@@ -140,7 +149,7 @@ nav ul a {
 }
 
 nav ul a:hover {
-  color: #fff;
+  color                       : #fff;
   border-bottom               : 2px #fff solid;
 }
 
@@ -152,32 +161,33 @@ nav ul a:hover {
 
 .project-card-link {
   border                      : 0;
-  transition: all 0.5s;
+  transition                  : all 0.5s;
 }
   .project-card-link:hover  {
   top                         : 0;
   padding-bottom              : 0;
-    border                      : 0;
-     transform: scale(1.1);
+  border                      : 0;
+  transform                   : scale(1.1);
 }
 
 a:hover small {
   color                       : #fff;
 }
 
+
 /*  200. Content  */
+
 
 main {
   margin: 20px;
 }
 
-
 .history {
-  text-align: center;
+  text-align                  : center;
   display                     : flex;
   flex-wrap                   : wrap;
   justify-content             : center;
-  padding: 0 10%;
+  padding                     : 0 10%;
 }
 
 .previous-projects {
@@ -187,16 +197,16 @@ main {
 }
 
 .full-width-box {
-  width: 100%;
-  text-align: center;
+  width                       : 100%;
+  text-align                  : center;
 }
 .full-width-box p {
-  margin: 50px auto;
-  padding: 0 10%;
+  margin                      : 50px auto;
+  padding                     : 0 10%;
 }
 
 .clear {
-  clear: both;
+  clear                       : both;
 }
 
 
@@ -234,8 +244,8 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
-  padding: 10px;
+  display                     : inline-block;
+  padding                     : 10px;
 }
 
 .center {
@@ -260,12 +270,11 @@ th, td {
 
 section {
 	min-height 							    : 200px;
-	/* background-color 				    : #f2f2f2; */
 }
 
 .hero-copy {
-  margin-top: 300px;
-  padding: 10px;
+  margin-top                  : 200px;
+  padding                     : 18px;
 }
 
 .my-name,
@@ -284,7 +293,6 @@ section {
   vertical-align 					    : middle;
   max-width                   : 100%;
   text-align: center;
-
 }
 
 section h2 {
@@ -294,7 +302,7 @@ section h2 {
 
 .hero {
 	height 						          : 700px;
-	margin-top 						      : 0px;
+	margin-top 						      : 0;
   width                       : 100%;
   background-repeat           : no-repeat;
   background-size             : cover;
@@ -305,7 +313,7 @@ section h2 {
  float                        : left;
  width                        : 100%;
  height                       : 100%;
- background-color             : rgba(0, 0, 0, 0.75);
+ background-color             : rgba(0, 0, 0, 0.9);
 }
 
 .hero .right-screen {
@@ -330,11 +338,15 @@ section h2 {
   padding                     : 10% 10%;
 }
 
+.attention-buttons {
+  padding                     : 40px 0;
+}
+
 .attention .right-screen {
   width                       : 350px;
   height                      : 300px;
   background-repeat           : no-repeat;
-  background-size             : 350px 250px;
+  background-size             : 350px 200px;
   background-position         : center center;
 }
 
@@ -359,18 +371,18 @@ section h2 {
 }
 
 .section-container{
-  display: inline-block;
-  width: 100%;
-  padding: 20px 0 20px 0;
+  display                     : inline-block;
+  width                       : 100%;
+  padding                     : 20px 0 20px 0;
 }
 
 .languages-frameworks {
-  width: 100%;
-  margin: 10px 0 0 -10px;
+  width                       : 100%;
+  margin                      : 10px 0 0 -10px;
 }
 .languages-frameworks li {
-  display: inline-block;
-  padding: 10px;
+  display                     : inline-block;
+  padding                     : 10px;
 }
 
 .left {
@@ -399,8 +411,8 @@ section h2 {
 }
 
 .code-languages-list li  {
-  display: inline-block;
-  margin-left: -10px;
+  display                     : inline-block;
+  margin-left                 : -10px;
 }
 
 .categories li,
@@ -412,7 +424,7 @@ section h2 {
 }
 
 footer {
-  padding: 100px 18px 40px 18px;
+  padding                     : 100px 18px 40px 18px;
 }
 
 footer ul {
@@ -429,7 +441,7 @@ footer ul li a {
   padding                     : 10px;
   margin                      : 10px;
   float                       : left;
-  text-align: center;
+  text-align                  : center;
 }
 
 
@@ -441,7 +453,7 @@ footer ul li a {
   padding                     : 0;
   margin                      : 10px;
   float                       : left;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color            : rgba(0, 0, 0, 0.95);
   border-radius               : 4px;
 }
 
@@ -450,9 +462,8 @@ footer ul li a {
 	margin                      : 10px;
 	float                       : left;
   border-radius               : 4px;
-  padding                     : 0px;
-  background-color: rgba(0, 0, 0, 0.95);
-
+  padding                     : 0;
+  background-color            : rgba(0, 0, 0, 0.95);
 }
 
 .previous-projects-card li,
@@ -469,8 +480,8 @@ footer ul li a {
 .previous-projects-card h6,
 .previous-projects-card small,
 .previous-projects-card li {
-  margin: 8px 16px 16px 16px;
-  color: #fff;
+  margin                      : 8px 16px 16px 16px;
+  color                       : #fff;
 }
 
 
@@ -487,7 +498,7 @@ footer ul li a {
 
 img {
   max-width                   : 100%;
-  border-radius: 4px;
+  border-radius               : 4px;
 }
 
 /* carousel */
@@ -495,7 +506,7 @@ img {
 .carousel {
   background-color            : #fafafa;
   border-radius               : 4px;
-  padding                     : 0px;
+  padding                     : 0;
   width                       : 100%;
 
 }
@@ -503,7 +514,7 @@ img {
 .slides {
   width                       : 100%;
   transition                  : all 2.75s ease;
-  display                     :none
+  display                     : none;
   padding                     : 10px;
 }
 
@@ -535,7 +546,7 @@ a:hover.slide-link  {
 
 .slider-buttons {
 	float 							        : left;
-	margin-right 					      : 0px;
+	margin-right 					      : 0;
 	text-decoration 				    : none;
 	margin-left 					      : 0;
 	margin-bottom 					    : 0;
@@ -624,18 +635,18 @@ article li {
 	width                       : 220px;
 	height                      : auto;
 	float                       : left;
-	margin                      : 0 10px 5px 0px;
+	margin                      : 0 10px 5px 0;
 }
 
 figure {
 	display                     : block;
 	height                      : auto;
-	padding                     : 0px;
+	padding                     : 0;
 	z-index                     : 1;
 }
 
 figure img {
-	margin-bottom               : 0px;
+	margin-bottom               : 0;
 	z-index                     : 5;
 }
 
@@ -661,7 +672,7 @@ figcaption {
 	padding                     : 8px 16px;
 	margin                      : 8px 0 8px 0;
 	z-index                     : 100;
-  border-radius: 4px;
+  border-radius               : 4px;
 }
 
 .article-meta {
@@ -673,7 +684,6 @@ figcaption {
 
 .articles-listing,
 .article-excerpt, .article-footer {
-
 	display                     : block;
 	width                       : 100%;
   max-width                   : 650px;
@@ -685,42 +695,43 @@ figcaption {
 /* 230. Layout - Tablet */
 @media screen and (min-width: 731px) {
 	.container {
-		margin-bottom 					     : 60px;
+		margin-bottom 					  : 60px;
 	}
+
   .hero .left-screen {
-    float: left;
-    width: 50%;
+    float                     : left;
+    width                     : 50%;
   }
 
   .hero .right-screen {
     float: right;
-    width                       : 50%;
-    background-repeat           : no-repeat;
-    background-size             : cover;
-    background-position         : center center;
-    border-top-right-radius     : 4px;
-    border-bottom-right-radius  : 4px;
+    width                      : 50%;
+    background-repeat          : no-repeat;
+    background-size            : cover;
+    background-position        : center center;
+    border-top-right-radius    : 4px;
+    border-bottom-right-radius : 4px;
   }
 
   .attention  .left-screen {
-    width                       : 100%;
+    width                     : 100%;
   }
 
   .attention .right-screen {
-    width: 100%;
-    min-height: 500px;
-    background-repeat           : no-repeat;
-    background-size             : 800px 500px;
-    background-position         : center bottom;
+    width                     : 100%;
+    min-height                : 500px;
+    background-repeat         : no-repeat;
+    background-size           : 800px 500px;
+    background-position       : center bottom;
   }
 
   .hero-copy {
-    margin: 100px 20% 100px 20%;
+    margin                    : 100px 20% 100px 20%;
   }
 
   main .previous-projects {
-    width: 100%;
-    justify-content: left;
+    width                     : 100%;
+    justify-content           : left;
   }
 
   .previous-projects-card {
@@ -733,24 +744,20 @@ figcaption {
 
 
 @media screen and (min-width  : 1200px) {
+
 	.container {
 		margin-bottom 					  : 20px;
 	}
 
   main {
-    margin: 20px 20px 200px 100px;
+    margin                    : 20px 20px 200px 100px;
   }
-
-
-
-
 
   .hero .left-screen {
    float: left;
-   width                        : 50%;
-   height                       : 100%;
+   width                      : 50%;
+   height                     : 100%;
   }
-
 
   .hero .right-screen {
     float: right;
@@ -764,26 +771,24 @@ figcaption {
 
 .attention {
   flex-wrap                   : nowrap;
-
 }
 
   .attention  .left-screen {
-    padding: 10% 5%;
-    width: 50%;
+    padding                   : 10% 5%;
+    width                     : 50%;
   }
 
   .attention .right-screen {
-    height: 760px;
-    float: right;
-    width                       : 50%;
-    background-repeat           : no-repeat;
-    background-size             : 1200px 660px;
-    background-position         : left bottom;
+    height                    : 760px;
+    float                     : right;
+    width                     : 50%;
+    background-repeat         : no-repeat;
+    background-size           : 1200px 660px;
+    background-position       : left bottom;
   }
 
-
   footer {
-    padding: 20px 20px 20px 200px;
+    padding                   : 20px 20px 20px 200px;
   }
 
   .img-right {
@@ -800,35 +805,36 @@ figcaption {
 	}
 
   .previous-projects-card img {
-    max-width: 520px;
-    max-height: 280px;
-    border-radius: 4px 4px 0 0;
+    max-width                 : 520px;
+    max-height                : 280px;
+    border-radius             : 4px 4px 0 0;
   }
 
   .pull-quote {
   	width                     : 300px;
-  	margin                    : 4px 0px 5px 8px;
+  	margin                    : 4px 0 5px 8px;
   	float                     : right;
   	z-index                   : 100;
   }
 
   .background-card {
-    max-width                   : 350px;
-    padding                     : 0px;
-    margin                      : 10px;
-    float                       : left;
-    text-align: center;
+    max-width                 : 350px;
+    padding                   : 0;
+    margin                    : 10px;
+    float                     : left;
+    text-align                : center;
   }
+
   .slide-image {
-    height: 600px;
+    height                    : 600px;
   }
 
   section {
-    margin: 0 0 100px 0;
+    margin                    : 0 0 100px 0;
   }
 
   main .previous-projects {
-    justify-content             : left;
+    justify-content           : left;
   }
 
 
