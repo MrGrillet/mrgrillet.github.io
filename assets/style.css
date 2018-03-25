@@ -199,10 +199,41 @@ main {
 .full-width-box {
   width                       : 100%;
   text-align                  : center;
+  padding: 40px;
 }
-.full-width-box p {
-  margin                      : 50px auto;
-  padding                     : 0 10%;
+
+.previous-projects-introduction {
+  float: left;
+  text-align: left;
+}
+
+.testimonials {
+
+  width: 100%;
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
+}
+
+.testimonial-box {
+  background-color: #dedede;
+  width: 300px;
+  max-width                   : 630px;
+  padding: 30px;
+  margin: 20px 20px 60px 20px;
+}
+
+.testimonial-credit {
+  font-weight: 500;
+}
+
+.testimonial-profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  float: right;
+    margin-bottom: -80px ;
+    margin-right: -50px ;
 }
 
 .clear {
@@ -294,11 +325,6 @@ section {
   text-align: center;
 }
 
-section h2 {
-	text-align 						      : center;
-  max-width                   : 100%;
-}
-
 .hero {
 	height 						          : 700px;
 	margin-top 						      : 0;
@@ -312,7 +338,7 @@ section h2 {
  float                        : left;
  width                        : 100%;
  height                       : 100%;
- background-color             : rgba(0, 0, 0, 0.9);
+ background-color             : rgba(0, 0, 0, 0.96);
 }
 
 .hero .right-screen {
@@ -422,6 +448,25 @@ section h2 {
 	margin-right                : 10px;
 }
 
+.call-to-action {
+  padding: 10%;
+  margin: 100px 0 0 0;
+}
+
+.call-to-action p {
+  font-size: 20px;
+}
+
+.call-to-action a {
+    border-bottom               : 2px #3FFECA solid;
+    font-size: 20px;
+    margin: 8px;
+}
+
+.call-to-action a:hover {
+    border-bottom               : 2px #fff solid;
+  }
+
 footer {
   padding                     : 100px 18px 40px 18px;
 }
@@ -499,6 +544,7 @@ img {
   max-width                   : 100%;
   border-radius               : 4px;
 }
+
 
 /* carousel */
 
@@ -725,13 +771,14 @@ figcaption {
     background-position       : center bottom;
   }
 
-
-
   main .previous-projects {
     width                     : 100%;
     justify-content           : left;
   }
 
+  .full-width-box {
+    padding: 10%;
+  }
   .previous-projects-card {
     max-width                 : 400px;
   }
@@ -839,5 +886,27 @@ figcaption {
     justify-content           : left;
   }
 
+
+  .full-width-box {
+    width                       : 100%;
+    text-align                  : center;
+    padding: 40px 70px;
+  }
+
+  .previous-projects-introduction {
+    float: left;
+    text-align: left;
+    margin: 10px 0  ;
+    width: 46%;
+    padding: 20px;
+  }
+
+  .testimonial-box {
+    background-color: #dedede;
+    width: 400px;
+    max-width                   : 630px;
+    padding: 30px;
+    margin: 20px 20px 60px 20px;
+  }
 
 }
