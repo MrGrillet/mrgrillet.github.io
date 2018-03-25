@@ -202,13 +202,13 @@ main {
   padding: 40px;
 }
 
-.previous-projects-introduction {
-  float: left;
-  text-align: left;
+.projects-im-interested-in {
+  display                     : flex;
+  flex-wrap                   : wrap;
+  justify-content             : center;
 }
 
 .testimonials {
-
   width: 100%;
   display                     : flex;
   flex-wrap                   : wrap;
@@ -782,6 +782,10 @@ figcaption {
   .previous-projects-card {
     max-width                 : 400px;
   }
+
+  .previous-projects-text {
+    width: 800px;
+  }
 }
 
 
@@ -893,7 +897,7 @@ figcaption {
     padding: 40px 70px;
   }
 
-  .previous-projects-introduction {
+  .previous-projects-text {
     float: left;
     text-align: left;
     margin: 10px 0  ;
