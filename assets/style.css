@@ -179,7 +179,7 @@ a:hover small {
 
 
 main {
-  margin: 20px;
+  margin                      : 20px;
 }
 
 .history {
@@ -199,7 +199,7 @@ main {
 .full-width-box {
   width                       : 100%;
   text-align                  : center;
-  padding: 40px;
+  padding                     : 40px;
 }
 
 .projects-im-interested-in {
@@ -209,31 +209,31 @@ main {
 }
 
 .testimonials {
-  width: 100%;
+  width                       : 100%;
   display                     : flex;
   flex-wrap                   : wrap;
   justify-content             : center;
 }
 
 .testimonial-box {
-  background-color: #dedede;
-  width: 300px;
+  background-color            : #dedede;
+  width                       : 300px;
   max-width                   : 630px;
-  padding: 30px;
-  margin: 20px 20px 60px 20px;
+  padding                     : 30px;
+  margin                      : 20px 20px 60px 20px;
 }
 
 .testimonial-credit {
-  font-weight: 500;
+  font-weight                 : 500;
 }
 
 .testimonial-profile-picture {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  float: right;
-    margin-bottom: -80px ;
-    margin-right: -50px ;
+  width                       : 120px;
+  height                      : 120px;
+  border-radius               : 100%;
+  float                       : right;
+  margin-bottom               : -80px;
+  margin-right                : -50px;
 }
 
 .clear {
@@ -271,7 +271,6 @@ nav ul {
   display                     : flex;
   flex-wrap                   : wrap;
   justify-content             : center;
-
 }
 
 nav li {
@@ -304,7 +303,7 @@ section {
 }
 
 .hero-copy {
-  margin                    : 100px 20px 100px 20px;
+  margin                      : 100px 20px 100px 20px;
 }
 
 .my-name,
@@ -322,7 +321,7 @@ section {
 .future .lead  {
   vertical-align 					    : middle;
   max-width                   : 100%;
-  text-align: center;
+  text-align                  : center;
 }
 
 .hero {
@@ -449,22 +448,22 @@ section {
 }
 
 .call-to-action {
-  padding: 10%;
-  margin: 100px 0 0 0;
+  padding                     : 10%;
+  margin                      : 100px 0 0 0;
 }
 
 .call-to-action p {
-  font-size: 20px;
+  font-size                   : 20px;
 }
 
 .call-to-action a {
-    border-bottom               : 2px #3FFECA solid;
-    font-size: 20px;
-    margin: 8px;
+    border-bottom             : 2px #3FFECA solid;
+    font-size                 : 20px;
+    margin                    : 8px;
 }
 
 .call-to-action a:hover {
-    border-bottom               : 2px #fff solid;
+    border-bottom             : 2px #fff solid;
   }
 
 footer {
@@ -528,8 +527,6 @@ footer ul li a {
   color                       : #fff;
 }
 
-
-
 .previous-projects-card img,
 .project-card img {
 	width                       : 100%;
@@ -553,7 +550,6 @@ img {
   border-radius               : 4px;
   padding                     : 0;
   width                       : 100%;
-
 }
 
 .slides {
@@ -580,7 +576,7 @@ height                        : 240px;
 
 .slide-caption h3,
 .slide-caption p  {
- margin: 16px 0 0 0 ;
+ margin                       : 16px 0 0 0;
 }
 
 a:hover.slide-link  {
@@ -625,10 +621,6 @@ a:hover.slide-link  {
 /* ARTICLES */
 
 
-article {
-
-}
-
 .article-title h1 {
 	font-size                   : 50px;
 	line-height                 : 1;
@@ -646,8 +638,8 @@ article p {
 }
 
 .article-nav .btn {
-  width: 150px;
-  text-align: center;
+  width                       : 150px;
+  text-align                  : center;
 }
 
 .lead {
@@ -750,13 +742,13 @@ figcaption {
   }
 
   .hero .right-screen {
-    float                      : right;
-    width                      : 50%;
-    background-repeat          : no-repeat;
-    background-size            : cover;
-    background-position        : center center;
-    border-top-right-radius    : 4px;
-    border-bottom-right-radius : 4px;
+    float                     : right;
+    width                     : 50%;
+    background-repeat         : no-repeat;
+    background-size           : cover;
+    background-position       : center center;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
   }
 
   .attention  .left-screen {
@@ -777,14 +769,14 @@ figcaption {
   }
 
   .full-width-box {
-    padding: 10%;
+    padding                   : 10%;
   }
   .previous-projects-card {
     max-width                 : 400px;
   }
 
   .previous-projects-text {
-    width: 800px;
+    width                     : 800px;
   }
 }
 
@@ -813,18 +805,18 @@ figcaption {
   }
 
   .hero .right-screen {
-    float: right;
-    width                       : 50%;
-    background-repeat           : no-repeat;
-    background-size             : cover;
-    background-position         : center center;
-    border-top-right-radius     : 4px;
-    border-bottom-right-radius  : 4px;
+    float                     : right;
+    width                     : 50%;
+    background-repeat         : no-repeat;
+    background-size           : cover;
+    background-position       : center center;
+    border-top-right-radius   : 4px;
+    border-bottom-right-radius: 4px;
   }
 
-.attention {
-  flex-wrap                   : nowrap;
-}
+  .attention {
+    flex-wrap                   : nowrap;
+  }
 
   .attention  .left-screen {
     padding                   : 10% 5%;
@@ -890,27 +882,26 @@ figcaption {
     justify-content           : left;
   }
 
-
   .full-width-box {
-    width                       : 100%;
-    text-align                  : center;
-    padding: 40px 70px;
+    width                     : 100%;
+    text-align                : center;
+    padding                   : 40px 70px;
   }
 
   .previous-projects-text {
-    float: left;
-    text-align: left;
-    margin: 10px 0  ;
-    width: 46%;
-    padding: 20px;
+    float                     : left;
+    text-align                : left;
+    margin                    : 10px 0;
+    width                     : 46%;
+    padding                   : 20px;
   }
 
   .testimonial-box {
-    background-color: #dedede;
-    width: 400px;
-    max-width                   : 630px;
-    padding: 30px;
-    margin: 20px 20px 60px 20px;
+    background-color          : #dedede;
+    width                     : 400px;
+    max-width                 : 630px;
+    padding                   : 30px;
+    margin                    : 20px 20px 60px 20px;
   }
 
 }
