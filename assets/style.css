@@ -219,6 +219,12 @@ main {
   display                     : flex;
   flex-wrap                   : wrap;
   justify-content             : center;
+  background-color            : #111;
+  padding-bottom: 30px;
+}
+
+.testimonials h2 {
+  color: #fff;
 }
 
 .testimonial-box {
@@ -228,6 +234,16 @@ main {
   padding                     : 30px;
   margin                      : 20px 20px 60px 20px;
 }
+
+main .testimonial-box {
+  background-color            : #111;
+
+}
+
+main .testimonial-box p {
+  color: #fff;
+}
+
 
 .testimonial-credit {
   font-weight                 : 500;
@@ -426,6 +442,7 @@ section {
   width                       : 100%;
   margin                      : 10px 0 0 -10px;
 }
+
 .languages-frameworks li {
   display                     : inline-block;
   padding                     : 10px;
@@ -924,6 +941,11 @@ main .testimonial-box {
 
   main .previous-projects {
     justify-content           : left;
+  }
+
+  .previous-projects {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .full-width-box {
