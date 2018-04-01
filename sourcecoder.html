@@ -27,7 +27,7 @@
   <main>
 				<div class="article-title">
 					<h1>sourceCoder</h1>
-          <p class="lead">This is my first attempt at building an application on my own. A job board specifically for developers, with a twist...</p>
+          <p class="lead">My first attempt at building a Rails application. A job board specifically for developers, with a twist...</p>
           <img src="img/sc-mac.png" class="img-full">
         </div>
 				<article>
@@ -42,8 +42,8 @@
               <li><a href="#research">Research</a></li>
               <li><a href="#solution-features">Proposed Solution & Features</a></li>
               <li><a href="#the-stack">The Stack</a></li>
-              <li><a href="#challenges">Challenges & Lessons Learned</a></li>
               <li><a href="#outcome">Outcome</a></li>
+              <li><a href="#challenges">Challenges & Lessons Learned</a></li>
             </ol>
 
 
@@ -66,6 +66,7 @@
             <h4>Product Objectives</h4>
             <p>As I want to get to the point where I can launch high-quality prototypes, I believe it is important to focus on the product as much as the code. To achieve this, I set objectives for the end result as well as the code:</p>
             <ul>
+              <li>A fuctioning web app</li>
               <li>Address real problems, highlighted by potential users</li>
               <li>Create a professional look and feel</li>
               <li>Clearly communicate what the product does</li>
@@ -98,7 +99,7 @@
             <a class="target-link" name="solution-features"></a><br>
             <h2>Proposed Solution & Features</h2>
             <p>Once I collected my thoughts on the research, I decided I wanted to make a platform that would connect Recruiters and Developers in one space. I believed the following attributes would make the platform engaging for both types of users. (If it was a real/ client project, I would have spent time validating thes assumptions.)</p>
-            <h5>Objectives</h5>
+            <h4>Objectives</h4>
             <ul>
               <li>Clearly communicate developers' skillsets based on experience and projects</li>
               <li>Allow both Recruiters and Developers to manage multiple jobs/applications in one space</li>
@@ -131,11 +132,11 @@
                 <li>Ability to add video to make their profile more engaging and communicate what they felt was important</li>
               </ul>
             </ul>
-<p>Once I had the list of features mapped out in Notion, I prioritised them and started addressing them one-by-one.</p>
-<img src="http://g.recordit.co/1pbUjMVsqa.gif" class="img-center">
-
-
-
+            <p>Once I had the list of features mapped out in Notion, I prioritised them and started addressing them one-by-one.</p>
+            <figure>
+              <img src="http://g.recordit.co/1pbUjMVsqa.gif" class="img-center">
+              <figcaption>My feature list, organised in Notion</figcaption>
+            </figure>
           <h4>Coming Soon</h4>
           <p>I still have plans to add more features to the app to make it more interesting and life-like.</p>
           <ul>
@@ -146,14 +147,15 @@
 
           <a class="target-link" name="the-stack"></a><br>
           <h2>The Stack</h2>
+          <p>My aim when selecting the stack was to make the project as close to a production ready app as possible, but also not to get bogged down with time consuming things which add little value.</p>
+            <p>I wanted to focus on learning exploring Rails it's self, rather than Gems and additional features. As a result, I made decisions like using a PostgresQL database, even in the development environment. I also decided to limit the number of Gems I used so I would focus more on the Rails framework than tempting addons. However, I did use a few Gems to sped up the development process like Bootsrap 4 and, Devise for signups and authentication.</p>
           <ul>
             <li>Bootstrap (Customised to clean up the look and feel)</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>Ruby On Rails</li>
-            <li>Postgres</li>
-            <li>Heroku</li>
+            <li>PostgresQL</li>
             <li>Gems:</li>
               <ul>
                 <li>Devise</li>
@@ -163,42 +165,24 @@
               </ul>
           </ul>
 
-          <a class="target-link" name="challenges"></a><br>
-          <h2>Challanges & lessons learned<h2>
-          <p></p>
+
+
 
           <a class="target-link" name="outcome"></a><br>
           <h2>Outcome</h2>
-          <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set. I am also really happy the the design.</p>
           <img src="http://g.recordit.co/GwSjb6UDhQ.gif" class="img-center">
-          <h4>Features</h4>
-          <ul>
-            <li>Responsive</li>
-            <li>Dynamic & Nested Forms with JavaScript</li>
-            <li>User signup with email authentication</li>
-            <li>Users can add and edit content they own (CRUD)</li>
-            <li>Data displayed in Charts</li>
-            <li>Different content/ menus' based on User type: Employer/ Applicant/ admin</li>
-            <li>Link to multimedia: images, youtube videos, links to 3rd party sites</li>
-            <li>Ability for Admin to manage coding languages on the platform</li>
-            <li>Basic search for jobs and applicants</li>
-            <li>Dashboard for Admin to review KPIs</li>
-          </ul>
-          <p>I would love to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site yet.</p>
-          <p><a href="http://twitter.com/mrgrillet">@mrGrillet</a></p>
+          <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set and an orginal design that is simple to navigate.</p>
           <div class="attention-buttons">
             <a href="http://sourcecoder.herokuapp.com" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/sourcecoder" target="_blank">view code</a>
           </div>
-					</div>
-					<div class="article-footer">
-            <div class="article-share">
-              <ul>
-                <li>Share:</li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Email</a></li>
-              </ul>
-					</div>
+          <a class="target-link" name="challenges"></a>
+          <h4>Challanges & lessons learned</h4>
+          <p>I really enjoyed building this procject. Luckily, I have lots of experience in the early stages of ceating projects which came in handy. One example of this was taking the time to list and prioritise the features before writing any code. It meant I could see how far a long I was in the development process and I could pick smaller or, larger challenges as my evenings would allow. It also meant I kept the pace up and stayed motivated because I could visualise my progress as the cards shiftied into the "done" category.</p>
+          <p>As this was the first web app I really built from scratch, there were countless challenges. The biggest one was figuring out how to create nested forms. This was important to me because I wanted users to be able add multiple projects as part of their work history. Creating dynamic forms turned out to be a real challenge that I Googled on multiple occasions. I also reached out to several developers who also struggled to come up with a solution. Eventually, one of the mentors at CodeBar worked it out.</p>
+          <p>As I mentioned, there were countless challenges and, lessons learned which would take all day to document. The main takeaway wasn't about specific bits of code or navigating the MVC but, just how many reseouces you can turn to when needed. From YouTube courses to can scan in your own time, to spaces like Codebar that let you work one-on-one with a mentor. I am eternally greatful for these and have been using them almost daily since starting this project.</p>
+          <p>I would love to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site, yet.</p>
+          <p><a href="http://twitter.com/mrgrillet">@mrGrillet</a></p>
+
 				</article>
 			</main>
     </div>

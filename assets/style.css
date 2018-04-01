@@ -36,7 +36,16 @@ Stylesheet Index
   padding                     : 0;
   text-decoration             : none;
   text-transform              : none;
-  font-family        : 'Roboto', helvetica, sans-serif;
+  font-family                 : "system-ui",
+                                BlinkMacSystemFont,
+                                "Segoe UI",
+                                Roboto,
+                                Helvetica,
+                                Arial,
+                                sans-serif,
+                                "Apple Color Emoji",
+                                "Segoe UI Emoji",
+                                "Segoe UI Symbol";
 }
 
 input, select {
@@ -119,7 +128,7 @@ a:hover {
 }
 
 .target-link {
-  margin: 100px;
+
 }
 
 .about-me-link {
@@ -236,6 +245,7 @@ main {
   width                       : 300px;
   max-width                   : 630px;
   padding                     : 30px;
+  border-radius               : 4px;
   margin                      : 20px 20px 60px 20px;
 }
 
@@ -674,7 +684,7 @@ a:hover.slide-link  {
 
 article h2,
 article h4 {
-  padding-top: 20px;
+  padding-top                  : 16px;
 }
 
 article p {
