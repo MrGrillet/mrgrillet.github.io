@@ -434,7 +434,8 @@ section {
 }
 
 .client-logos {
-  padding: 10%;
+  padding                     : 80px 15% 0 15%;
+  min-height                  : 100px
 }
 
 .languages-frameworks {
