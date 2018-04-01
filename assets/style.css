@@ -237,7 +237,6 @@ main {
 
 main .testimonial-box {
   background-color            : #111;
-
 }
 
 main .testimonial-box p {
@@ -359,7 +358,7 @@ section {
 }
 
 .hero {
-	height 						          : 700px;
+	height 						          : 750px;
 	margin-top 						      : 0;
   width                       : 100%;
   background-repeat           : no-repeat;
@@ -435,7 +434,7 @@ section {
 }
 
 .client-logos {
-  padding: 0 10%;
+  padding: 10%;
 }
 
 .languages-frameworks {
@@ -785,10 +784,6 @@ main .testimonial-box {
 
 /* 230. Layout - Tablet */
 @media screen and (min-width: 731px) {
-
-	.container {
-
-	}
 
   .hero .left-screen {
     float                     : left;
