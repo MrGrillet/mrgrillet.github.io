@@ -118,6 +118,10 @@ a:hover {
   padding-bottom              : 2px;
 }
 
+.target-link {
+  margin: 100px;
+}
+
 .about-me-link {
   margin: 10% 20px 0 0;
   text-align: center;
@@ -435,7 +439,9 @@ section {
 
 .client-logos {
   padding                     : 80px 15% 0 15%;
-  min-height                  : 100px
+  min-height                  : 100px;
+  align-items                 :center;
+  display: none;
 }
 
 .languages-frameworks {
@@ -487,7 +493,7 @@ section {
 }
 
 .call-to-action {
-  padding                     : 10%;
+  padding                     : 10% 10% 15% 10%;
   margin                      : 100px 0 0 0;
 }
 
@@ -666,6 +672,11 @@ a:hover.slide-link  {
 	margin-bottom               : 20px;
 }
 
+article h2,
+article h4 {
+  padding-top: 20px;
+}
+
 article p {
 	margin-top                  : 16px;
 	margin-bottom               : 16px;
@@ -835,6 +846,11 @@ main .testimonial-box {
   .previous-projects-text {
     width                     : 800px;
   }
+
+  .client-logos {
+    display: block;
+  }
+
 }
 
 
