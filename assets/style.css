@@ -760,8 +760,6 @@ figcaption img {
   border-radius               : 4px;
 }
 
-
-
 figcaption {
   margin-top                  : -20px;
   color                       : #111;
@@ -773,7 +771,7 @@ figcaption {
 	width                       : 100%;
   max-width                   : 630px;
   margin                      : 4px 0;
-  font-weight: 400;
+  font-weight: ;
 }
 
 main .testimonial-box {
