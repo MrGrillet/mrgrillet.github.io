@@ -1,48 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>MrGrillet v4</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <meta charset="UTF-8">
-    <!-- Facebook Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1864175010531664');
-      fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1864175010531664&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
-    <div class="menu-toggle-button" onclick="toggleNav()" >
+    <div class="menu-toggle-button" onclick="toggleNav()">
       toggle menu
     </div>
     <nav id="navigation-bar">
       <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="about.html" >About</a></li>
-        <li><a href="projects.html" >Projects*</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects*</a></li>
         <!-- <li><a href="posts.html">Notes</a></li> -->
-        <li><a href="https://github.com/MrGrillet" target="_blank" >Github</a></li>
-        <li><a href="https://twitter.com/MrGrillet" target="_blank" >Twitter</a></li>
-        <li><a href="mailto:mrgrillet@gmail.com" target="_blank" >Contact</a></li>
+        <li><a href="https://github.com/MrGrillet" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/MrGrillet" target="_blank">Twitter</a></li>
+        <li><a href="mailto:mrgrillet@gmail.com" target="_blank">Contact</a></li>
       </ul>
       <p>&copy; Peter Grillet - 2018</p>
     </nav>
     <div class="container">
-      <main>
       <h1>Test form</h1>
-      <p>This is a form for testing GA & Hubspot connection...</p>
+      <p>This is a form for testing GA & Hubspot connection</p>
       <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
       <script>
         hbspt.forms.create({
@@ -50,12 +31,13 @@
       	formId: "3225ea03-0514-4dc2-8408-b124bc74b645"
       });
       </script>
-    </main>
     </div>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     <script>
      function setGaClientId() {
-         $('[name=ga_client_id]').val("new-client-id");
+     if ($('[name=ga_client_id]')[0]) {
+         $('[name=ga_client_id]').val(_((Cookies.get('_ga') || '').split('.')).takeRight(2).join('.'));
+         }
      }
      hbspt.forms.create({
      css: '',
