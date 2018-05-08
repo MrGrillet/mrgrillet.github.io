@@ -56,7 +56,7 @@
     <script>
      function setGaClientId() {
      if ($('[name=ga_client_id]')[0]) {
-         $('[name=ga_client_id]').val(_((Cookies.get('_ga') || '').split('.')).takeRight(2).join('.'));
+         $('[name=ga_client_id]').val("new-client-id");
          }
      }
      hbspt.forms.create({
