@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MrGrillet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <meta charset="UTF-8">
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1864175010531664');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1864175010531664&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+  <nav id="navigation-bar">
+    <div class="menu-toggle-button" onclick="toggleNav()">
+      toggle menu
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects*</a></li>
+      <!-- <li><a href="posts.html">Notes</a></li> -->
+      <li><a href="https://github.com/MrGrillet" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/MrGrillet" target="_blank">Twitter</a></li>
+      <li><a href="mailto:mrgrillet@gmail.com" target="_blank">Contact</a></li>
+    </ul>
+    <p>&copy; Peter Grillet - 2018</p>
+  </nav>
+  <div class="container">
+    <main>
+      <div class="article-title">
+        <h1>Lnx</h1>
+        <p class="lead">A simple app for helping influencers get around the 'one link in the bio' problem</p>
+        <img src="img/lnx.jpg" class="img-full">
+      </div>
+      <article>
+        <div class="article-body">
+          <div class="attention-buttons">
+            <a href="http://lnx-app.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/lnx" target="_blank">view code</a>
+          </div>
+
+          <ol>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#solution-features">Proposed Solution & Features</a></li>
+            <li><a href="#the-stack">The Stack</a></li>
+            <li><a href="#outcome">Outcome</a></li>
+            <li><a href="#challenges">Challenges & Lessons Learned</a></li>
+          </ol>
+
+
+          <a class="target-link" name="background"></a><br>
+          <h2>Background</h2>
+          <p>If you <a href="https://twitter.com/search?f=tweets&vertical=default&q=%23learntocode%20%40mrgrillet&src=typd" target="_blank">follow me on twitter</a> you've probably seen screenshots and gifs of this project as I was building it. I have known
+            been able to build websites with HTML and CSS for 10 years. I have also worked on many Wordpress and PHP projects where I focused on the design but, never spent much time interacting with the back-end. I have always wanted to be able to build prototypes
+            for ideas, so I decided it was time to take advantage of learning resources online.</p>
+          <p>I believe the best way to learn anything, is to do so while trying to achieve an overall goal or objective. I also reached out to the <a href="https://www.indiehackers.com/forum/10-things-you-wish-youd-known-when-you-started-programming-254d49dad0"
+              target="_blank">Indie Hackers community, who confirmed this</a>.</p>
+
+
+          <a class="target-link" name="objectives"></a>
+          <h2>Objectives</h2>
+          <h4>Learning Objectives</h4>
+          <p>My goal is to be able to rapidly build prototypes for product ideas. After a number of conversations, I decided I would start with Ruby and Rails as my language and framework of choice. After more research, I decided it I wanted to get the following out of this project:</p>
+          <ul>
+            <li>Create something that looks as close as possible to a real live product</li>
+            <li>Stumble across challenges I didn't know existed</li>
+            <li>Get comfortable navigating Rails and MVC</li>
+            <li>Experiment with relational databases</li>
+          </ul>
+          <h4>Product Objectives</h4>
+          <p>As I want to get to the point where I can launch high-quality prototypes, I believe it is important to focus on the product as much as the code. To achieve this, I set objectives for the end result as well as the code:</p>
+          <ul>
+            <li>A fuctioning web app</li>
+            <li>Address real problems, highlighted by potential users</li>
+            <li>Create a professional look and feel</li>
+            <li>Clearly communicate what the product does</li>
+          </ul>
+          <a class="target-link" name="research"></a><br>
+          <h2>Research</h2>
+          <figure class="img-right" style="width: 400px;">
+            <figcaption>An example of a profile page</figcaption>
+            <img src="img/profile.gif" class="">
+          </figure>
+          <p>On average I attend meetups in the tech community about once a week. At these events I often meet founders struggling to hire developers. I've also met a number of junior developers who are struggling to find roles. So, I decided to create an app that would address this problem.</p>
+          <p>I had many conversations which gave me some idea of the challanges and an opportunity to discuss some of the solutions. To make the project as realistic as possible but, not to allow it to take up all of time time. I focued on a few problems that consistently came up in conversations from either side:</p>
+          <h5>Challenges Recruiters and HR Managers Raised</h5>
+          <ul>
+            <li>Limited number of developers and lots of compeition for them</li>
+            <li>Finding developers who can ship high-quality code</li>
+            <li>FInding developers with the right culture fit</li>
+            <li>Quickly identifying if the developer has relevant experience</li>
+            <li>Making the opportunity applealing enough due to competition</li>
+          </ul>
+          <h5>Challenges Developers Raised</h5>
+          <ul>
+            <li>Communicating the value of thier experince that isn't limited to the launguage that is currently on trend</li>
+            <li>Many job sites are flooded with roles that seem to be for fake jobs</li>
+            <li>There are too many job boards, mostly flooded with irrelevant roles</li>
+            <li>The constant need to fill in multiple websites with the same information, in addition to uploading a CV is frustrating</li>
+          </ul>
+
+
+
+          <a class="target-link" name="solution-features"></a><br>
+          <h2>Proposed Solution & Features</h2>
+          <p>Once I collected my thoughts on the research, I decided I wanted to make a platform that would connect Recruiters and Developers in one space. The research suggested the following attributes would make the platform engaging for both types of users. (If
+            it was a real/ client project, I would have spent time validating thes assumptions.)</p>
+          <h4>Objectives</h4>
+          <ul>
+            <li>Communicate Developers' skill-sets based on experience and projects</li>
+            <li>Allow both Recruiters and Developers to manage multiple jobs/applications in one space</li>
+            <li>Clean and easy to navigate user interface</li>
+            <li>Enable Developers to apply for multiple jobs with the same profile</li>
+            <li>Discourage recruiters from posting fake job ads</li>
+          </ul>
+          <p>With these objectives in mind, I then went on to create a list of features in Notion that I believed would appeal to both types of users, but also the fundamentals of a job board.</p>
+          <h4>Recruiters features</h4>
+          <p>I created the following list of features to address the challenges that recuiters faced:</p>
+          <ul>
+            <li>The ability to search a databse of developers, once signed up</li>
+            <li>Create and edit Job Ads</li>
+            <li>Ability to post multiple Job Ads to recruit for multiple roles at any one time</li>
+            <li>Create company profile page to help sell the company</li>
+            <li>The ability to search for applicants based on Languages or Frameworks</li>
+            <li>The ability to quickly visualise how much experience developers have at a glance</li>
+            <li>Using video, list of projects and Biography area to communicate culture fit</li>
+          </ul>
+
+          <h4>Developer features</h4>
+          <ul>
+            <li>The ability to search Jobs or Companies</li>
+            <li>Quick application process</li>
+            <li>Ability to create Profiles which have all background information and is linked to all Job Applications</li>
+            <li>Profiles focused not on previous job titles but, on projects and languages</li>
+            <ul>
+              <li>Charts to illustrate experience</li>
+              <li>Opportunity to explain background and future goals</li>
+              <li>Ability to add video to make their profile more engaging and communicate what they felt was important</li>
+            </ul>
+          </ul>
+          <p>Once I had the list of features mapped out in Notion, I prioritised them and started addressing them one-by-one.</p>
+          <figure>
+            <img src="http://g.recordit.co/1pbUjMVsqa.gif" class="img-center">
+            <figcaption>My feature list, organised in Notion</figcaption>
+          </figure>
+          <h4>Coming Soon</h4>
+          <p>I still have plans to add more features to the app to make it more interesting and life-like:</p>
+          <ul>
+            <li>Companies to pay monthly to search applicants and upload jobs</li>
+            <li>Pay to list featured jobs</li>
+            <li>Some content is hidden when reviewing applicant profiles who have not yet applied for a role at the employer company</li>
+          </ul>
+
+          <a class="target-link" name="the-stack"></a><br>
+          <h2>The Stack</h2>
+          <p>My aim when selecting the stack was to make the project as close to a production ready app as possible, but also not to get bogged down with time consuming things which add little value.</p>
+          <p>I wanted to focus on learning and exploring Rails it's self, rather than Gems and additional features. As a result, I made decisions like using a PostgresQL database, even in the development environment. I also decided to limit the number of Gems
+            I used so I would focus more on the Rails framework than tempting addons. However, I did use a few Gems to speed up the development process like Bootsrap 4 and, Devise for signups and authentication.</p>
+          <ul>
+            <li>Bootstrap (Customised to clean up the look and feel)</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Ruby On Rails</li>
+            <li>PostgresQL</li>
+            <li>Gems:</li>
+            <ul>
+              <li>Devise</li>
+              <li>Bootstrap 4</li>
+              <li>Saas Rails</li>
+              <li>Charts RoR/ Chart.js</li>
+            </ul>
+          </ul>
+
+          <a class="target-link" name="outcome"></a><br>
+          <h2>Outcome</h2>
+          <figure class="img-full">
+            <img src="img/lnx-outcome.gif" class="img-full">
+            <figcaption>Quick app walkthrough</figcaption>
+          </figure>
+          <div class="attention-buttons">
+            <a href="http://lnx-app.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/lnx" target="_blank">view code</a>
+          </div>
+          <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set and an orginal design that is simple to navigate.</p>
+          <a class="target-link" name="challenges"></a>
+          <h4>Challanges & lessons learned</h4>
+          <p>I really enjoyed building this procject. Luckily, I have lots of experience in the early stages of ceating projects which came in handy. One example of this was taking the time to list and prioritise the features before writing any code. It
+            meant I could see how far a long I was in the development process and I could pick smaller or, larger challenges as my evenings would allow. It also meant I kept the pace up and stayed motivated because I could visualise my progress as the
+            cards shiftied into the "done" category.</p>
+          <p>As this was the first web app I really built from scratch, there were countless challenges. The biggest one was figuring out how to create nested forms. This was important to me because I wanted users to be able add multiple projects as part
+            of their work history. Creating dynamic forms turned out to be a real challenge that I Googled on multiple occasions. I also reached out to several developers who also struggled to come up with a solution. Eventually, one of the mentors at
+            CodeBar worked it out.</p>
+            <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set and, an orginal design that is simple to navigate.</p>
+
+          <figure>
+            <img src="img/nested-form.png" class="img-center">
+            <figcaption><strong>An example of a nested form</strong><br>
+              Here the check-boxes for the code languages are nested inside a form for recording work history. The kist of languages was pulled in from the languages table rather than hard coded.</figcaption>
+          </figure>
+
+          <p>As I mentioned, there were countless challenges and, lessons learned which would take all day to document. The main takeaway wasn't about specific bits of code or navigating the MVC but, just how many reseouces you can turn to when needed. From
+            YouTube courses to can scan in your own time, to spaces like Codebar that let you work one-on-one with a mentor. I am eternally greatful for these and have been using them almost daily since starting this project.</p>
+          <p>I would love to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site, yet.</p>
+          <p><a href="http://twitter.com/mrgrillet" target="_blank">@mrGrillet</a></p>
+
+      </article>
+    </main>
+    </div>
+    <script src="assets/main.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2639781.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86729844-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-86729844-2');
+    </script>
+  </body>
+</html>

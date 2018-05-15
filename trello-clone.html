@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MrGrillet v4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <meta charset="UTF-8">
+  <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1864175010531664');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1864175010531664&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+
+<body>
+
+  <nav id="navigation-bar">
+    <div class="menu-toggle-button" onclick="toggleNav()">
+      toggle menu
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects*</a></li>
+      <!-- <li><a href="posts.html">Notes</a></li> -->
+      <li><a href="https://github.com/MrGrillet" target="_blank">Github</a></li>
+      <li><a href="https://twitter.com/MrGrillet" target="_blank">Twitter</a></li>
+      <li><a href="mailto:mrgrillet@gmail.com" target="_blank">Contact</a></li>
+    </ul>
+    <p>&copy; Peter Grillet - 2018</p>
+  </nav>
+  <div class="container">
+    <main>
+      <div class="article-title">
+        <h1>Trello Clone</h1>
+        <p class="lead">Project management boards with draggable lists and cards. Built with Rails and Vue.js </p>
+        <img src="img/trello-cards.jpg" class="img-full">
+      </div>
+      <article>
+        <div class="article-body">
+          <div class="attention-buttons">
+            <a href="https://trell-clone.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/trello-clone" target="_blank">view code</a>
+          </div>
+
+          <ol>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#the-stack">The Stack</a></li>
+            <li><a href="#outcome">Outcome</a></li>
+            <li><a href="#challenges">Challenges & Lessons Learned</a></li>
+          </ol>
+
+
+          <a class="target-link" name="background"></a><br>
+          <h2>Background</h2>
+          <p> As part of my process of learning to code, I'm buinding a new project each month. This allows me to stuble across new concepts and is really engaging because you get to play with products once they are built. Which I find more rewarding than some of the exercises on platforms like Codwars.</p>
+          <p>If you <a href="https://twitter.com/search?f=tweets&vertical=default&q=%23learntocode%20%40mrgrillet&src=typd" target="_blank">follow me on twitter</a> you may have seen this months project already. It's a Trello Clone, allowing me to learn about creating Drag and Drop functionality.</p>
+<img src="http://g.recordit.co/uINVHMQl5c.gif" alt="" class="img-center">
+
+          <a class="target-link" name="objectives"></a>
+          <h2>Objectives</h2>
+          <h4>Learning Objectives</h4>
+          <p>My goal is to be able to rapidly build prototypes for product ideas as a full-stack developer. After a number of conversations, I decided I would start with Ruby on Rails to build, then shift my focus to JavaScript frameworks. I've completed a few Rails projects so I'm now ready to dive into JavaScript.</p>
+          <p>I wanted to get the following out of this project:</p>
+          <ul>
+            <li>Get some exposure to a JavaScript framework</li>
+            <li>Build something that would be useful to a future project</li>
+            <li>Stumble across challenges I didn't know existed</li>
+          </ul>
+          <figure class="img-right">
+            <figcaption>Editing a card</figcaption>
+            <img src="img/trello-edit-card.jpg" class="">
+          </figure>
+          <p>After some research, I decided I would would go with a Trello Clone as I have always like Trello's user interface. I find the dragging and dropping of cards both useful and satisfying.</p>
+          <p>Once I decided on the concept, I went looking for a tutorial. I ended up going with one by Chris at Go Rails. I like the pace of his videos (which is really fast) and it ticket all of my Learning Objective boxes.</p>
+
+
+
+          <a class="target-link" name="the-stack"></a><br>
+          <h2>The Stack</h2>
+          <p>My aim with the stack was to be as minimal as possible but still keep to using Rails. I also want to have something that looked like a real product. Chris's course was perfect for this.</p>
+          <p>While the stack was light-weight it still resulted in a number of challenges.</p>
+          <p>Here is what the final stack looked like...</p>
+          <ul>
+            <li>Vue.js</li>
+            <li>Ruby On Rails</li>
+            <li>Bootstrap (Customised to clean up the look and feel)</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JSON</li>
+            <li>JavaScript</li>
+            <li>PostgresQL</li>
+            <li>Gems:</li>
+            <ul>
+              <li>Devise</li>
+              <li>Bootstrap 4</li>
+              <li>Saas Rails</li>
+              <li>Acts as list</li>
+              <li>Rails UJS</li>
+              <li>Web packer</li>
+            </ul>
+          </ul>
+
+          <a class="target-link" name="outcome"></a><br>
+          <h2>Outcome</h2>
+          <figure class="img-full">
+            <img src="img/trello.gif" class="img-full">
+            <figcaption>Quick app walkthrough</figcaption>
+          </figure>
+          <div class="attention-buttons">
+              <a href="https://trell-clone.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/trello-clone" target="_blank">view code</a>
+          </div>
+          <p>Overall, I am really happy with the outcome. There is still some work to do but, I got the drag and drop functionality in there. I also got to work on making information persist without loading a new page. This means a user could constantly make changes and the would be saved using Ajax.</p>
+          <a class="target-link" name="challenges"></a>
+          <h4>Challanges & lessons learned</h4>
+          <p>While I got the drag and drop functionality working it's not ideal. I haven't managed to complete the process of making the card positions persist. While the tutorial is supposed to cover this, it seems to be out of date so I have been battling with this and a couple other bugs. While tutorials are great and deliver incredible amounts of value, this often seems to be the case. While it can be frustrating, it's also rewarding when you figure out how to overcome the challenge.</p>
+          <p>I would love to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site, yet.</p>
+          <p><a href="http://twitter.com/mrgrillet" target="_blank">@mrGrillet</a></p>
+          <p>If you'd like to see more of my projects, you can <a href="projects.html">click here</a>.</p>
+      </article>
+    </main>
+    </div>
+    <script src="assets/main.js"></script>
+    <!-- Start of HubSpot Embed Code -->
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2639781.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86729844-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-86729844-2');
+    </script>
+  </body>
+</html>
