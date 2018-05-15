@@ -69,106 +69,67 @@
 
           <a class="target-link" name="background"></a><br>
           <h2>Background</h2>
-          <p>If you <a href="https://twitter.com/search?f=tweets&vertical=default&q=%23learntocode%20%40mrgrillet&src=typd" target="_blank">follow me on twitter</a> you've probably seen screenshots and gifs of this project as I was building it. I have known
-            been able to build websites with HTML and CSS for 10 years. I have also worked on many Wordpress and PHP projects where I focused on the design but, never spent much time interacting with the back-end. I have always wanted to be able to build prototypes
-            for ideas, so I decided it was time to take advantage of learning resources online.</p>
-          <p>I believe the best way to learn anything, is to do so while trying to achieve an overall goal or objective. I also reached out to the <a href="https://www.indiehackers.com/forum/10-things-you-wish-youd-known-when-you-started-programming-254d49dad0"
-              target="_blank">Indie Hackers community, who confirmed this</a>.</p>
-
+          <p>This is month three of my learning to code by building products each month.</p>
+          <p>For this project, I wanted to build a small platform that would allow users to sign up with a really quick onboarding process. I also wanted it to be able to take payments.</p>
 
           <a class="target-link" name="objectives"></a>
           <h2>Objectives</h2>
           <h4>Learning Objectives</h4>
           <p>My goal is to be able to rapidly build prototypes for product ideas. After a number of conversations, I decided I would start with Ruby and Rails as my language and framework of choice. After more research, I decided it I wanted to get the following out of this project:</p>
           <ul>
-            <li>Create something that looks as close as possible to a real live product</li>
-            <li>Stumble across challenges I didn't know existed</li>
+            <li>Implement the ability to take card payments</li>
+            <li>Figure out a business model that will make sense for users</li>
             <li>Get comfortable navigating Rails and MVC</li>
-            <li>Experiment with relational databases</li>
+            <li>Allow users to upload images in Production to AWS</li>
           </ul>
           <h4>Product Objectives</h4>
-          <p>As I want to get to the point where I can launch high-quality prototypes, I believe it is important to focus on the product as much as the code. To achieve this, I set objectives for the end result as well as the code:</p>
+          <p>As mentioned with other projects, I want to get to the point where I can launch high-quality prototypes. I believe it is important to focus on the product as much as the code. To achieve this, I set objectives for the end result as well as the code:</p>
           <ul>
             <li>A fuctioning web app</li>
             <li>Address real problems, highlighted by potential users</li>
             <li>Create a professional look and feel</li>
             <li>Clearly communicate what the product does</li>
+            <li>Sit through user testing</li>
           </ul>
           <a class="target-link" name="research"></a><br>
           <h2>Research</h2>
+          <p>I have spent a lot of time marketing on Social Media, particualrly on Instagram. While trying to build brands and communities on Instagram one of the problems you come across very quickly is the 'one link in the bio' challenge.</p>
+          <p>For influencers and eCommerce managers, this can be a big problem because they are constantly sharing different products or content in their feed. As you can't add clickable links to posts and are restricted to one link in the bio, followers struggle to find the content or products being promoted in posts. This means business owners are missing out on sales and valueable traffic.</p>
+          <h5>Challenges faced by potential users</h5>
+          <ol>
+            <li>Need to share multiple links in bio</li>
+            <ul>
+              <li>Social media profiles</li>
+              <li>Links to blog posts</li>
+              <li>Links to products</li>
+              <li>About pages</li>
+              <li>Affiliate links</li>
+            </ul>
+            <li>Mobile friendly</li>
+            <li>Quick to setup</li>
+            <li>Easy to communicate links relevant to followers</li>
+            <li>Reflect their brand</li>
+            <li>Communicate importance of links</li>
+          </ol>
+
+          <a class="target-link" name="solution-features"></a><br>
+          <h2>Proposed Solution & Features</h2>
           <figure class="img-right" style="width: 400px;">
             <figcaption>An example of a profile page</figcaption>
             <img src="img/profile.gif" class="">
           </figure>
-          <p>On average I attend meetups in the tech community about once a week. At these events I often meet founders struggling to hire developers. I've also met a number of junior developers who are struggling to find roles. So, I decided to create an app that would address this problem.</p>
-          <p>I had many conversations which gave me some idea of the challanges and an opportunity to discuss some of the solutions. To make the project as realistic as possible but, not to allow it to take up all of time time. I focued on a few problems that consistently came up in conversations from either side:</p>
-          <h5>Challenges Recruiters and HR Managers Raised</h5>
-          <ul>
-            <li>Limited number of developers and lots of compeition for them</li>
-            <li>Finding developers who can ship high-quality code</li>
-            <li>FInding developers with the right culture fit</li>
-            <li>Quickly identifying if the developer has relevant experience</li>
-            <li>Making the opportunity applealing enough due to competition</li>
-          </ul>
-          <h5>Challenges Developers Raised</h5>
-          <ul>
-            <li>Communicating the value of thier experince that isn't limited to the launguage that is currently on trend</li>
-            <li>Many job sites are flooded with roles that seem to be for fake jobs</li>
-            <li>There are too many job boards, mostly flooded with irrelevant roles</li>
-            <li>The constant need to fill in multiple websites with the same information, in addition to uploading a CV is frustrating</li>
-          </ul>
-
-
-
-          <a class="target-link" name="solution-features"></a><br>
-          <h2>Proposed Solution & Features</h2>
-          <p>Once I collected my thoughts on the research, I decided I wanted to make a platform that would connect Recruiters and Developers in one space. The research suggested the following attributes would make the platform engaging for both types of users. (If
-            it was a real/ client project, I would have spent time validating thes assumptions.)</p>
+          <p>The solution I came up with was to create a platfrom that would allow users to quickly create profiles that would refelect their brand and allow them to add a list of links to the profile. The focus throughout the platform would be speed and simplicity.</p>
           <h4>Objectives</h4>
           <ul>
-            <li>Communicate Developers' skill-sets based on experience and projects</li>
-            <li>Allow both Recruiters and Developers to manage multiple jobs/applications in one space</li>
+            <li>Sub 10 minute onboarding process</li>
+            <li>Mobile first</li>
+            <li>Flexible, to empower all types of social media brands</li>
             <li>Clean and easy to navigate user interface</li>
-            <li>Enable Developers to apply for multiple jobs with the same profile</li>
+            <li>Ability to unlock premium features by purchasing a subscription</li>
             <li>Discourage recruiters from posting fake job ads</li>
           </ul>
           <p>With these objectives in mind, I then went on to create a list of features in Notion that I believed would appeal to both types of users, but also the fundamentals of a job board.</p>
-          <h4>Recruiters features</h4>
-          <p>I created the following list of features to address the challenges that recuiters faced:</p>
-          <ul>
-            <li>The ability to search a databse of developers, once signed up</li>
-            <li>Create and edit Job Ads</li>
-            <li>Ability to post multiple Job Ads to recruit for multiple roles at any one time</li>
-            <li>Create company profile page to help sell the company</li>
-            <li>The ability to search for applicants based on Languages or Frameworks</li>
-            <li>The ability to quickly visualise how much experience developers have at a glance</li>
-            <li>Using video, list of projects and Biography area to communicate culture fit</li>
-          </ul>
-
-          <h4>Developer features</h4>
-          <ul>
-            <li>The ability to search Jobs or Companies</li>
-            <li>Quick application process</li>
-            <li>Ability to create Profiles which have all background information and is linked to all Job Applications</li>
-            <li>Profiles focused not on previous job titles but, on projects and languages</li>
-            <ul>
-              <li>Charts to illustrate experience</li>
-              <li>Opportunity to explain background and future goals</li>
-              <li>Ability to add video to make their profile more engaging and communicate what they felt was important</li>
-            </ul>
-          </ul>
-          <p>Once I had the list of features mapped out in Notion, I prioritised them and started addressing them one-by-one.</p>
-          <figure>
-            <img src="http://g.recordit.co/1pbUjMVsqa.gif" class="img-center">
-            <figcaption>My feature list, organised in Notion</figcaption>
-          </figure>
-          <h4>Coming Soon</h4>
-          <p>I still have plans to add more features to the app to make it more interesting and life-like:</p>
-          <ul>
-            <li>Companies to pay monthly to search applicants and upload jobs</li>
-            <li>Pay to list featured jobs</li>
-            <li>Some content is hidden when reviewing applicant profiles who have not yet applied for a role at the employer company</li>
-          </ul>
+          <p>As usual, once I had the list of features mapped out in Notion, I prioritised them and started addressing them one-by-one. You can watch a short video on how I manage features and bugs <a href="https://www.youtube.com/watch?v=QGkEQhNXi98">here</a>.</p>
 
           <a class="target-link" name="the-stack"></a><br>
           <h2>The Stack</h2>
@@ -187,7 +148,6 @@
               <li>Devise</li>
               <li>Bootstrap 4</li>
               <li>Saas Rails</li>
-              <li>Charts RoR/ Chart.js</li>
             </ul>
           </ul>
 
@@ -200,28 +160,35 @@
           <div class="attention-buttons">
             <a href="http://lnx-app.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a> <a href="https://github.com/MrGrillet/lnx" target="_blank">view code</a>
           </div>
-          <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set and an orginal design that is simple to navigate.</p>
+          <p>I'm really happy with how this project turned out.</p>
+          <p>I've got some great feedback, a couple of people have said they would use it in the wild because it solves a problem they have come across. Also, while building it, I stumbled across some competing products that do a similar thing. So, there could be a maket for it.</p>
+          <p>With reards to my objectives, I managed to acheve a all of them, but as with many projects - once you get started you come up with more and more ideas that seem to add value. I haven't got too caught up in those just yet, but there are more thing I plan to add. For now, I have managed to tick off my main objectives. I'm most proud of these...</p>
+          <h6>Sub 10 min onboarding time</h6>
+          <p>After a couple of walkthroughs, I managed to get the onboarding process down to 3 minutes. This means people who are totally new to the app, can stuble across it and from the moment they click on the 'signup' button, to seeing their first profile can be done in 3 minutes.</p>
+          <h6>Flexible, to empower all types of social media brands</h6>
+          <p>After demoing a few of the features I came up with, I got comments from users about how they thought features like 'Cards', would be really useful for helping promotions stand out. For one individual, they said the design and the cards feature would make them select my platform over my compeitors and it would help drive sales and conversions for their business.</p>
+          <p>Users would also quickly get an idea of how it could be adapted to their brand and began to request features like themes. This shows that they bought into the idea and was true for both an influencer and an eCommerce manage I spoke to.</p>
           <a class="target-link" name="challenges"></a>
           <h4>Challanges & lessons learned</h4>
-          <p>I really enjoyed building this procject. Luckily, I have lots of experience in the early stages of ceating projects which came in handy. One example of this was taking the time to list and prioritise the features before writing any code. It
-            meant I could see how far a long I was in the development process and I could pick smaller or, larger challenges as my evenings would allow. It also meant I kept the pace up and stayed motivated because I could visualise my progress as the
-            cards shiftied into the "done" category.</p>
-          <p>As this was the first web app I really built from scratch, there were countless challenges. The biggest one was figuring out how to create nested forms. This was important to me because I wanted users to be able add multiple projects as part
-            of their work history. Creating dynamic forms turned out to be a real challenge that I Googled on multiple occasions. I also reached out to several developers who also struggled to come up with a solution. Eventually, one of the mentors at
-            CodeBar worked it out.</p>
-            <p>Overall, I am really happy with the outcome. There is still some work to do but, I managed to build a significant feature set and, an orginal design that is simple to navigate.</p>
-
+          <p>Overall, this was a really simple project to build. It did have a few challenges, working with the Stripe API was new to me. I'd never worked with an API until this point. Funnily enough this wasn't the biggest issue with this project. The biggest issue has been with what I assumed would be one of the more simple features. The biggest issue in the app has been adding Vanity URLs and Slugs to profiles. These are both crutial features and have proven to be a challenge for multiple users.</p>
+          <p>Many users had never heard the terms 'vanity URL' or 'slug'. This was a surprise to me as they are so common amoungst social media profiles. It's how you set up the link to your profile so your username ends up being, "socialmediasite.com/your_name".</p>
+          <p>Almost every user failed to complete this step successfully, despite instuctions by the box added special characters or spaces.</p>
           <figure>
-            <img src="img/nested-form.png" class="img-center">
-            <figcaption><strong>An example of a nested form</strong><br>
-              Here the check-boxes for the code languages are nested inside a form for recording work history. The kist of languages was pulled in from the languages table rather than hard coded.</figcaption>
+            <img src="img/slugs.png" class="img-center">
+            <figcaption>Adding a Vanity URL to a page.</figcaption>
           </figure>
-
-          <p>As I mentioned, there were countless challenges and, lessons learned which would take all day to document. The main takeaway wasn't about specific bits of code or navigating the MVC but, just how many reseouces you can turn to when needed. From
-            YouTube courses to can scan in your own time, to spaces like Codebar that let you work one-on-one with a mentor. I am eternally greatful for these and have been using them almost daily since starting this project.</p>
-          <p>I would love to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site, yet.</p>
+          <p>This is a massive problem because once they save the page, they are directed to view it and the platform finds the page with the Vanity URL. So I need to learn how to add validations to solve this. I am currently investigating a soluton for this.</p>
+          <p>Validations are also needed to work out if people have added the correct link format.</p>
+          <p>When users add links, they can either add 'http://' or 'https://'. If they don't the link currently won't work. I need ot add a validation process that checks links before they are added. This is possible and I will implement it, but I am still in the process of researching the best way to do so.</p>
+          <p>As I said earlier, this project has been a lot of fun, I've really enjoyed it and plan to continue to work on it into the future. Possibly launch it as a paid product, but it need some essentials fixed before I would be comfortable putting it out in the wild. Overall, I'm really excited about how far I have come in what feels like a short space of time. I can't imagine what I'd be able to build by the end of the year.</p>
+          <p>If you'd like to have a play with the app and create a profile, click here...
+            <div class="attention-buttons">
+              <a href="http://lnx-app.herokuapp.com/" class="btn btn-filled-dark" target="_blank">live demo</a>
+            </div>
+            (be warned, it's on a demo server so it will take a little time to load up first time around)
+          </p>
+          <p>It would be great to hear any feedback or comments you might have. You can ping them over to my twitter account as I haven't added a comments section to this site, yet.</p>
           <p><a href="http://twitter.com/mrgrillet" target="_blank">@mrGrillet</a></p>
-
       </article>
     </main>
     </div>
